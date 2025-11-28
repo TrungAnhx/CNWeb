@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Nghệ Web - Web Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Công Nghệ Web</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#about">Giới Thiệu</a></li>
+                    <li><a href="#features">Tính Năng</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Chào Mừng Đến Với Công Nghệ Web</h2>
+                    <p>Khám phá sức mạnh của HTML, CSS và JavaScript</p>
+                    <button class="btn btn-primary" id="demoBtn">Xem Demo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Giới Thiệu</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>HTML5</h3>
+                        <p>Ngôn ngữ đánh dấu siêu văn bản được sử dụng để tạo cấu trúc cho trang web.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>CSS3</h3>
+                        <p>Cascading Style Sheets giúp tạo kiểu và bố cục cho trang web một cách đẹp mắt.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>JavaScript</h3>
+                        <p>Ngôn ngữ lập trình giúp tạo tính tương tác và động cho trang web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Tính Năng</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Thiết Kế Responsive</h3>
+                        <p>Giao diện tự động điều chỉnh trên mọi thiết bị</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Hiệu Năng Cao</h3>
+                        <p>Tối ưu hóa tốc độ tải trang và trải nghiệm người dùng</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Bảo Mật</h3>
+                        <p>Áp dụng các tiêu chuẩn bảo mật web hiện đại</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">♿</div>
+                        <h3>Dễ Tiếp Cận</h3>
+                        <p>Hỗ trợ tốt cho người dùng khuyết tật</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Liên Hệ</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tin Nhắn:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Công Nghệ Web. All rights reserved.</p>
+            <p>Developed with ❤️ using HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
